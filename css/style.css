@@ -39,6 +39,16 @@ body {
   color: #fff;
 }
 
+h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  color: #212353;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
 nav {
   margin-top: 50px;
 }
@@ -85,21 +95,19 @@ nav .btn img {
 }
 
 .landing-page {
-  height: 100vh;
+  min-height: 100vh;
   padding: 130px 0 100px 0;
   background-image: url("../img//bg/bg-lp.svg");
-  background-position: 90% 50%;
+  background-position: 90% 75%;
   background-repeat: no-repeat;
 }
 
 .landing-page h1 {
   width: 53%;
-  color: #212353;
   font-size: 8rem;
 }
 
 .landing-page p {
-  font-size: 1.8rem;
   line-height: 160%;
   width: 34%;
 }
@@ -107,4 +115,46 @@ nav .btn img {
 .landing-page h1,
 .landing-page p {
   margin-bottom: 50px;
+}
+
+.about {
+  padding: 125px 92px 125px 50%;
+  background: rgba(240, 99, 184, 0.15) url("../img/bg/bg-about.svg");
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  border-radius: 50px;
+}
+
+.about h1 {
+  line-height: 130%;
+  margin-bottom: 40px;
+}
+
+.about p {
+  line-height: 160%;
+  color: #4b5d68;
+}
+
+.features {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.features h1 {
+  font-size: 4rem;
+  margin-bottom: 50px;
+}
+
+.features h2 {
+  color: #212353;
+  font-size: 2.4rem;
+}
+
+.features p {
+  font-size: 1.6rem;
+}
+
+.features .features__header {
+  width: 52%;
+  margin: 0 auto 100px auto;
 }
