@@ -1,18 +1,30 @@
-$darkGray: #4b5d68;
-$darkBlue: #212353;
-$violet: #9c69e2;
-$pink: #f063b8;
-$green: #68c9ba;
+@import "reset.scss";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,700&display=swap");
+@import "variables.scss";
 
 body {
   font-family: "Nunito", sans-serif;
-  height: 100vh;
-  background-color: rgb(233, 233, 233);
+  background: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%);
 }
 
 .container {
+  position: relative;
   width: 1120px;
   margin: 0 auto;
+}
+
+.btn {
+  padding: 21px 29px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.btn--white {
+  background: #fff;
+  box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  color: $darkBlue;
 }
 
 nav {
@@ -20,6 +32,10 @@ nav {
   .container {
     display: flex;
     align-items: center;
+    .btn {
+      position: absolute;
+      right: 0;
+    }
   }
   .nav__links {
     display: flex;
@@ -29,10 +45,17 @@ nav {
     a {
       color: $darkGray;
       text-decoration: none;
+      font-size: 1.6rem;
     }
     a.active {
       font-weight: 700;
       color: $darkBlue;
+    }
+  }
+  .btn {
+    img {
+      margin-left: 18px;
+      vertical-align: middle;
     }
   }
 }
