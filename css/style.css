@@ -84,11 +84,16 @@ nav .btn img {
   vertical-align: middle;
 }
 
-.landing-page .landing-page__text {
-  width: 53%;
+.landing-page {
+  height: 100vh;
+  padding: 130px 0 100px 0;
+  background-image: url("../img//bg/bg-lp.svg");
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
 }
 
 .landing-page h1 {
+  width: 53%;
   color: #212353;
   font-size: 8rem;
 }
@@ -96,4 +101,10 @@ nav .btn img {
 .landing-page p {
   font-size: 1.8rem;
   line-height: 160%;
+  width: 34%;
+}
+
+.landing-page h1,
+.landing-page p {
+  margin-bottom: 50px;
 }
