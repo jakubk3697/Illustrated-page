@@ -27,6 +27,11 @@ body {
   color: $darkBlue;
 }
 
+.btn--violet {
+  background-color: #9c69e2;
+  color: #fff;
+}
+
 nav {
   margin-top: 50px;
   .container {
@@ -37,25 +42,54 @@ nav {
       right: 0;
     }
   }
+
   .nav__links {
     display: flex;
     justify-content: space-between;
     margin-left: 10.8%;
     width: 28.75%;
+
     a {
       color: $darkGray;
       text-decoration: none;
       font-size: 1.6rem;
     }
+
     a.active {
       font-weight: 700;
       color: $darkBlue;
     }
   }
+
   .btn {
     img {
       margin-left: 18px;
       vertical-align: middle;
     }
+  }
+}
+
+.landing-page {
+  height: 100vh;
+  padding: 130px 0 100px 0;
+  background-image: url("../img//bg/bg-lp.svg");
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+
+  h1 {
+    width: 53%;
+    color: $darkBlue;
+    font-size: 8rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+    line-height: 160%;
+    width: 34%;
+  }
+
+  h1,
+  p {
+    margin-bottom: 50px;
   }
 }
