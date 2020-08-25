@@ -34,6 +34,11 @@ body {
   color: #212353;
 }
 
+.btn--violet {
+  background-color: #9c69e2;
+  color: #fff;
+}
+
 nav {
   margin-top: 50px;
 }
@@ -77,4 +82,18 @@ nav .nav__links a.active {
 nav .btn img {
   margin-left: 18px;
   vertical-align: middle;
+}
+
+.landing-page .landing-page__text {
+  width: 53%;
+}
+
+.landing-page h1 {
+  color: #212353;
+  font-size: 8rem;
+}
+
+.landing-page p {
+  font-size: 1.8rem;
+  line-height: 160%;
 }

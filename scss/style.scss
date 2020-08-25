@@ -27,6 +27,11 @@ body {
   color: $darkBlue;
 }
 
+.btn--violet {
+  background-color: #9c69e2;
+  color: #fff;
+}
+
 nav {
   margin-top: 50px;
   .container {
@@ -57,5 +62,19 @@ nav {
       margin-left: 18px;
       vertical-align: middle;
     }
+  }
+}
+
+.landing-page {
+  .landing-page__text {
+    width: 53%;
+  }
+  h1 {
+    color: $darkBlue;
+    font-size: 8rem;
+  }
+  p {
+    font-size: 1.8rem;
+    line-height: 160%;
   }
 }
