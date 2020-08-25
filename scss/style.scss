@@ -1,5 +1,11 @@
+$darkGray: #4b5d68;
+$darkBlue: #212353;
+$violet: #9c69e2;
+$pink: #f063b8;
+$green: #68c9ba;
+
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito", sans-serif;
   height: 100vh;
   background-color: rgb(233, 233, 233);
 }
@@ -7,4 +13,26 @@ body {
 .container {
   width: 1120px;
   margin: 0 auto;
+}
+
+nav {
+  margin-top: 50px;
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  .nav__links {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10.8%;
+    width: 28.75%;
+    a {
+      color: $darkGray;
+      text-decoration: none;
+    }
+    a.active {
+      font-weight: 700;
+      color: $darkBlue;
+    }
+  }
 }
