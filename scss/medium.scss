@@ -1,23 +1,55 @@
+.btn--mobile-menu {
+  display: none;
+}
+
+.btn--violet {
+  box-shadow: none;
+}
+
 .container {
   width: 720px;
 }
 
 nav {
   margin-top: 50px;
-  .container {
-    .btn {
-      position: absolute;
-      right: 0;
-      bottom: unset;
-      img {
-        display: initial;
-      }
-    }
-  }
+
   .nav__links {
     display: flex;
     justify-content: space-between;
     margin-left: 10.8%;
     width: 42.75%;
+  }
+  .container {
+    .btn {
+      position: absolute;
+      right: 0;
+      bottom: unset;
+
+      img {
+        display: initial;
+      }
+    }
+  }
+}
+
+.landing-page {
+  min-height: 100vh;
+  padding: 130px 0 100px 0;
+  background-position: 90% 75%;
+  background-size: unset;
+
+  h1 {
+    width: 53%;
+    font-size: 8rem;
+  }
+
+  p {
+    line-height: 160%;
+    width: 34%;
+  }
+
+  h1,
+  p {
+    margin-bottom: 50px;
   }
 }

@@ -31,6 +31,7 @@ body {
 
 .btn--violet {
   background-color: #9c69e2;
+  box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
   color: #fff;
 }
 
@@ -40,7 +41,7 @@ body {
   bottom: unset;
   padding: 15px;
   img {
-    width: 40px;
+    width: 30px;
   }
 }
 
@@ -49,22 +50,26 @@ h1 {
   font-size: 4rem;
   color: $darkBlue;
 }
+
 p {
   font-size: 1.8rem;
 }
 
 nav {
   margin-top: 3%;
+
   .container {
     position: relative;
     display: flex;
     align-items: center;
+
     .btn--white {
       position: fixed;
       right: 15px;
       bottom: 15px;
       z-index: 1;
       transform: translateX(-20%);
+
       img {
         display: none;
       }
@@ -96,24 +101,23 @@ nav {
 
 .landing-page {
   min-height: 100vh;
-  padding: 130px 0 100px 0;
+  padding: 30px 0 100px 0;
   background-image: url("../img//bg/bg-lp.svg");
-  background-position: 90% 75%;
   background-repeat: no-repeat;
+  background-position: 50% 86%;
+  background-size: 100%;
 
   h1 {
-    width: 53%;
-    font-size: 8rem;
+    font-size: 4rem;
   }
 
   p {
     line-height: 160%;
-    width: 34%;
   }
 
   h1,
   p {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 
@@ -123,10 +127,12 @@ nav {
   background-repeat: no-repeat;
   background-position: 5% 50%;
   border-radius: 50px;
+
   h1 {
     line-height: 130%;
     margin-bottom: 40px;
   }
+
   p {
     line-height: 160%;
     color: $darkGray;
@@ -155,6 +161,7 @@ nav {
     line-height: 160%;
     background-repeat: no-repeat;
     background-position: 100% 50%, 0% 50%;
+
     a {
       position: absolute;
       bottom: 30px;

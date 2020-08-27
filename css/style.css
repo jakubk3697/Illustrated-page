@@ -38,6 +38,8 @@ body {
 
 .btn--violet {
   background-color: #9c69e2;
+  -webkit-box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+          box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
   color: #fff;
 }
 
@@ -49,7 +51,7 @@ body {
 }
 
 .btn--mobile-menu img {
-  width: 40px;
+  width: 30px;
 }
 
 h1 {
@@ -111,25 +113,24 @@ nav .btn img {
 
 .landing-page {
   min-height: 100vh;
-  padding: 130px 0 100px 0;
+  padding: 30px 0 100px 0;
   background-image: url("../img//bg/bg-lp.svg");
-  background-position: 90% 75%;
   background-repeat: no-repeat;
+  background-position: 50% 86%;
+  background-size: 100%;
 }
 
 .landing-page h1 {
-  width: 53%;
-  font-size: 8rem;
+  font-size: 4rem;
 }
 
 .landing-page p {
   line-height: 160%;
-  width: 34%;
 }
 
 .landing-page h1,
 .landing-page p {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .about {
