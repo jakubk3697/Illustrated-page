@@ -1,0 +1,23 @@
+.container {
+  width: 720px;
+}
+
+nav {
+  margin-top: 50px;
+  .container {
+    .btn {
+      position: absolute;
+      right: 0;
+      bottom: unset;
+      img {
+        display: initial;
+      }
+    }
+  }
+  .nav__links {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10.8%;
+    width: 42.75%;
+  }
+}

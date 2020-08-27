@@ -15,7 +15,7 @@ body {
 
 .container {
   position: relative;
-  width: 1120px;
+  width: 96%;
   margin: 0 auto;
 }
 
@@ -25,6 +25,8 @@ body {
   border: none;
   font-size: 1.6rem;
   font-weight: 600;
+  background: none;
+  cursor: pointer;
 }
 
 .btn--white {
@@ -39,6 +41,17 @@ body {
   color: #fff;
 }
 
+.btn--mobile-menu {
+  position: absolute;
+  right: 0;
+  bottom: unset;
+  padding: 15px;
+}
+
+.btn--mobile-menu img {
+  width: 40px;
+}
+
 h1 {
   font-weight: 700;
   font-size: 4rem;
@@ -50,10 +63,11 @@ p {
 }
 
 nav {
-  margin-top: 50px;
+  margin-top: 3%;
 }
 
 nav .container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,20 +76,21 @@ nav .container {
           align-items: center;
 }
 
-nav .container .btn {
-  position: absolute;
-  right: 0;
+nav .container .btn--white {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  z-index: 1;
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
+}
+
+nav .container .btn--white img {
+  display: none;
 }
 
 nav .nav__links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-left: 10.8%;
-  width: 28.75%;
+  display: none;
 }
 
 nav .nav__links a {
@@ -137,7 +152,55 @@ nav .btn img {
 
 .features {
   margin-top: 150px;
+}
+
+.features .features__header {
+  width: 52%;
+  margin: 0 auto 100px auto;
   text-align: center;
+}
+
+.features .features__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: calc(50% - 45px) calc(50% - 45px);
+      grid-template-columns: calc(50% - 45px) calc(50% - 45px);
+  grid-gap: 45px;
+}
+
+.features .features__item {
+  position: relative;
+  height: 360px;
+  padding: 62px 50px 50px 50%;
+  line-height: 160%;
+  background-repeat: no-repeat;
+  background-position: 100% 50%, 0% 50%;
+}
+
+.features .features__item a {
+  position: absolute;
+  bottom: 30px;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #212353;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.features .features__item--1 {
+  background-image: url("../img/bg/bg-f-1.svg"), url("../img/bg/bg-f-1b.svg");
+}
+
+.features .features__item--2 {
+  background-image: url("../img/bg/bg-f-2.svg"), url("../img/bg/bg-f-2b.svg");
+}
+
+.features .features__item--3 {
+  background-image: url("../img/bg/bg-f-3.svg"), url("../img/bg/bg-f-3b.svg");
+}
+
+.features .features__item--4 {
+  background-image: url("../img/bg/bg-f-4.svg"), url("../img/bg/bg-f-4b.svg");
 }
 
 .features h1 {
@@ -146,15 +209,13 @@ nav .btn img {
 }
 
 .features h2 {
+  margin-bottom: 35px;
   color: #212353;
   font-size: 2.4rem;
 }
 
 .features p {
   font-size: 1.6rem;
-}
-
-.features .features__header {
-  width: 52%;
-  margin: 0 auto 100px auto;
+  margin-bottom: 30px;
+  line-height: 160%;
 }

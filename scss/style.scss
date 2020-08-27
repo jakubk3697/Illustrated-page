@@ -9,7 +9,7 @@ body {
 
 .container {
   position: relative;
-  width: 1120px;
+  width: 96%;
   margin: 0 auto;
 }
 
@@ -19,6 +19,8 @@ body {
   border: none;
   font-size: 1.6rem;
   font-weight: 600;
+  background: none;
+  cursor: pointer;
 }
 
 .btn--white {
@@ -32,6 +34,16 @@ body {
   color: #fff;
 }
 
+.btn--mobile-menu {
+  position: absolute;
+  right: 0;
+  bottom: unset;
+  padding: 15px;
+  img {
+    width: 40px;
+  }
+}
+
 h1 {
   font-weight: 700;
   font-size: 4rem;
@@ -42,21 +54,25 @@ p {
 }
 
 nav {
-  margin-top: 50px;
+  margin-top: 3%;
   .container {
+    position: relative;
     display: flex;
     align-items: center;
-    .btn {
-      position: absolute;
-      right: 0;
+    .btn--white {
+      position: fixed;
+      right: 15px;
+      bottom: 15px;
+      z-index: 1;
+      transform: translateX(-20%);
+      img {
+        display: none;
+      }
     }
   }
 
   .nav__links {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 10.8%;
-    width: 28.75%;
+    display: none;
 
     a {
       color: $darkGray;
@@ -119,7 +135,52 @@ nav {
 
 .features {
   margin-top: 150px;
-  text-align: center;
+
+  .features__header {
+    width: 52%;
+    margin: 0 auto 100px auto;
+    text-align: center;
+  }
+
+  .features__list {
+    display: grid;
+    grid-template-columns: calc(50% - 45px) calc(50% - 45px);
+    grid-gap: 45px;
+  }
+
+  .features__item {
+    position: relative;
+    height: 360px;
+    padding: 62px 50px 50px 50%;
+    line-height: 160%;
+    background-repeat: no-repeat;
+    background-position: 100% 50%, 0% 50%;
+    a {
+      position: absolute;
+      bottom: 30px;
+      vertical-align: middle;
+      text-decoration: none;
+      color: $darkBlue;
+      font-weight: 600;
+      font-size: 1.6rem;
+    }
+  }
+
+  .features__item--1 {
+    background-image: url("../img/bg/bg-f-1.svg"), url("../img/bg/bg-f-1b.svg");
+  }
+
+  .features__item--2 {
+    background-image: url("../img/bg/bg-f-2.svg"), url("../img/bg/bg-f-2b.svg");
+  }
+
+  .features__item--3 {
+    background-image: url("../img/bg/bg-f-3.svg"), url("../img/bg/bg-f-3b.svg");
+  }
+
+  .features__item--4 {
+    background-image: url("../img/bg/bg-f-4.svg"), url("../img/bg/bg-f-4b.svg");
+  }
 
   h1 {
     font-size: 4rem;
@@ -127,16 +188,14 @@ nav {
   }
 
   h2 {
+    margin-bottom: 35px;
     color: $darkBlue;
     font-size: 2.4rem;
   }
 
   p {
     font-size: 1.6rem;
-  }
-
-  .features__header {
-    width: 52%;
-    margin: 0 auto 100px auto;
+    margin-bottom: 30px;
+    line-height: 160%;
   }
 }

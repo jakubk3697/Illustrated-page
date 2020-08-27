@@ -1,0 +1,7 @@
+.container {
+  width: 960px;
+}
+
+nav .nav__links {
+  width: 28.75% !important;
+}

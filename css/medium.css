@@ -1,0 +1,28 @@
+.container {
+  width: 720px;
+}
+
+nav {
+  margin-top: 50px;
+}
+
+nav .container .btn {
+  position: absolute;
+  right: 0;
+  bottom: unset;
+}
+
+nav .container .btn img {
+  display: initial;
+}
+
+nav .nav__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 10.8%;
+  width: 42.75%;
+}
