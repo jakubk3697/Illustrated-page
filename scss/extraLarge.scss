@@ -1,3 +1,44 @@
 .container {
   width: 1120px;
 }
+
+.landing-page {
+  background-position: 90% 75%;
+  background-size: unset;
+
+  h1 {
+    width: 53%;
+    font-size: 8rem;
+  }
+}
+
+.about {
+  padding: 125px 92px 125px 50%;
+  background-size: unset;
+}
+
+.features {
+  margin-top: 150px;
+
+  .features__list {
+    width: 100%;
+    margin: 0px auto;
+    grid-template-columns: calc(50% - 22.5px) calc(50% - 22.5px);
+  }
+
+  .features__item--1 {
+    background: url("../img/bg/bg-f-1.svg") no-repeat scroll 100% 50%, url("../img/bg/bg-f-1b.svg") no-repeat scroll 10% 50%;
+  }
+
+  .features__item--2 {
+    background: url("../img/bg/bg-f-2.svg") no-repeat scroll 100% 50%, url("../img/bg/bg-f-2b.svg") no-repeat scroll 10% 50%;
+  }
+
+  .features__item--3 {
+    background: url("../img/bg/bg-f-3.svg") no-repeat scroll 100% 50%, url("../img/bg/bg-f-3b.svg") no-repeat scroll 10% 50%;
+  }
+
+  .features__item--4 {
+    background: url("../img/bg/bg-f-4.svg") no-repeat scroll 100% 50%, url("../img/bg/bg-f-4b.svg") no-repeat scroll 10% 50%;
+  }
+}

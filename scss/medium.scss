@@ -39,12 +39,11 @@ nav {
 .landing-page {
   min-height: 100vh;
   padding: 130px 0 100px 0;
-  background-position: 90% 75%;
-  background-size: unset;
+  background-position: 100% 50%;
+  background-size: 70%;
 
   h1 {
-    width: 53%;
-    font-size: 8rem;
+    font-size: 7rem;
   }
 
   p {
@@ -54,12 +53,66 @@ nav {
 
   h1,
   p {
-    margin-bottom: 50px;
+    margin-bottom: 35px;
   }
 }
 
 .about {
-  padding: 125px 92px 125px 50%;
+  padding: 50px 40px 50px 40%;
   background-position: 5% 50%;
-  background-size: unset;
+  background-size: 30%;
+
+  h1 {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  p {
+    line-height: 160%;
+  }
+}
+
+.features {
+  margin-top: 100px;
+
+  .features__header {
+    width: 52%;
+    margin: 0 auto 100px auto;
+  }
+
+  .features__list {
+    grid-template-columns: 100%;
+  }
+
+  .features__item {
+    height: 360px;
+    padding: 62px 50px 50px 50%;
+    background-repeat: no-repeat;
+    background-position: 100% 50%, 5% 50%;
+  }
+
+  a {
+    position: absolute;
+    bottom: 30px;
+  }
+
+  .features__item--1 {
+    background-image: url("../img/bg/bg-f-1.svg"), url("../img/bg/bg-f-1b.svg");
+  }
+
+  .features__item--2 {
+    background-image: url("../img/bg/bg-f-2.svg"), url("../img/bg/bg-f-2b.svg");
+  }
+
+  .features__item--3 {
+    background-image: url("../img/bg/bg-f-3.svg"), url("../img/bg/bg-f-3b.svg");
+  }
+
+  .features__item--4 {
+    background-image: url("../img/bg/bg-f-4.svg"), url("../img/bg/bg-f-4b.svg");
+  }
+
+  h2 {
+    margin-bottom: 35px;
+  }
 }

@@ -3,5 +3,10 @@
 }
 
 nav .nav__links {
-  width: 28.75% !important;
+  width: 28.75%;
+}
+
+.features .features__list {
+  width: 80%;
+  margin: 0 auto;
 }
