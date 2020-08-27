@@ -56,7 +56,7 @@ body {
 
 h1 {
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 2.5rem;
   color: #212353;
 }
 
@@ -134,16 +134,18 @@ nav .btn img {
 }
 
 .about {
-  padding: 125px 92px 125px 50%;
+  padding: 20px;
   background: rgba(240, 99, 184, 0.15) url("../img/bg/bg-about.svg");
   background-repeat: no-repeat;
-  background-position: 5% 50%;
   border-radius: 50px;
+  background-position: 50% 24%;
+  background-size: 65%;
 }
 
 .about h1 {
   line-height: 130%;
-  margin-bottom: 40px;
+  margin-bottom: 250px;
+  text-align: center;
 }
 
 .about p {

@@ -1,13 +1,17 @@
+.container {
+  width: 720px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
 .btn--mobile-menu {
   display: none;
 }
 
 .btn--violet {
   box-shadow: none;
-}
-
-.container {
-  width: 720px;
 }
 
 nav {
@@ -52,4 +56,10 @@ nav {
   p {
     margin-bottom: 50px;
   }
+}
+
+.about {
+  padding: 125px 92px 125px 50%;
+  background-position: 5% 50%;
+  background-size: unset;
 }

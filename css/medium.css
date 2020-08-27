@@ -1,3 +1,11 @@
+.container {
+  width: 720px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
 .btn--mobile-menu {
   display: none;
 }
@@ -5,10 +13,6 @@
 .btn--violet {
   -webkit-box-shadow: none;
           box-shadow: none;
-}
-
-.container {
-  width: 720px;
 }
 
 nav {
@@ -56,4 +60,10 @@ nav .container .btn img {
 .landing-page h1,
 .landing-page p {
   margin-bottom: 50px;
+}
+
+.about {
+  padding: 125px 92px 125px 50%;
+  background-position: 5% 50%;
+  background-size: unset;
 }
