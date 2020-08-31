@@ -326,4 +326,5 @@ nav .btn img {
 .testimonials__cards .two,
 .testimonials__cards .three {
   width: 36%;
+  opacity: 0.8;
 }
