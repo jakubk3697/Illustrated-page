@@ -55,6 +55,11 @@ body {
   width: 30px;
 }
 
+.btn--pink {
+  background: #f063b8;
+  color: #fff;
+}
+
 h1 {
   font-weight: 700;
   font-size: 2.5rem;
@@ -327,4 +332,44 @@ nav .btn img {
 .testimonials__cards .three {
   width: 36%;
   opacity: 0.8;
+}
+
+footer {
+  margin-top: 250px;
+}
+
+footer .incentive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .incentive .leftArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .incentive .leftArea h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  margin-bottom: 20px;
+}
+
+footer .incentive .leftArea p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+}
+
+footer .incentive .rightArea .btn--white {
+  margin-left: 30px;
 }
