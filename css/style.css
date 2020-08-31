@@ -65,6 +65,10 @@ p {
   font-size: 1.8rem;
 }
 
+main {
+  overflow: hidden;
+}
+
 nav {
   margin-top: 3%;
 }
@@ -156,6 +160,7 @@ nav .btn img {
 
 .features {
   margin-top: 30px;
+  margin-bottom: 150px;
 }
 
 .features .features__header {
@@ -218,4 +223,107 @@ nav .btn img {
   font-size: 1.6rem;
   margin-bottom: 30px;
   line-height: 160%;
+}
+
+.testimonials {
+  background-color: #9c69e2;
+  border-radius: 50px;
+  padding-bottom: 50px;
+}
+
+.testimonials .dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 60px;
+  margin-top: 100px;
+}
+
+.testimonials .dots .dot {
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+.testimonials .dots .active {
+  padding: 7px;
+  background-color: #f063b8;
+}
+
+.testimonials .arrows {
+  position: absolute;
+  right: 75px;
+  bottom: 63px;
+}
+
+.testimonials .arrows a:first-of-type {
+  margin-right: 10px;
+}
+
+.testimonials__title {
+  padding: 100px 100px 70px 60px;
+  color: #fff;
+}
+
+.testimonials__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 150%;
+  -webkit-transform: translateX(60px);
+          transform: translateX(60px);
+}
+
+.testimonials__cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 280px;
+  margin-right: 20px;
+  border-radius: 20px;
+  padding: 50px 20px;
+  background: #ffffff;
+  border: 1px solid #9c69e2;
+  -webkit-box-shadow: 0px 20px 0px rgba(49, 0, 116, 0.1);
+          box-shadow: 0px 20px 0px rgba(49, 0, 116, 0.1);
+}
+
+.testimonials__cards .card .contentBox .person {
+  font-size: 4rem;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 160%;
+}
+
+.testimonials__cards .card .contentBox .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+}
+
+.testimonials__cards .card .contentBox .content {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 180%;
+  color: #4b5d68;
+}
+
+.testimonials__cards .card .avatarBox .avatar {
+  width: 90px;
+  height: 90px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.testimonials__cards .one {
+  width: 58%;
+}
+
+.testimonials__cards .two,
+.testimonials__cards .three {
+  width: 36%;
 }

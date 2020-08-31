@@ -56,6 +56,10 @@ p {
   font-size: 1.8rem;
 }
 
+main {
+  overflow: hidden;
+}
+
 nav {
   margin-top: 3%;
 
@@ -144,6 +148,7 @@ nav {
 
 .features {
   margin-top: 30px;
+  margin-bottom: 150px;
 
   .features__header {
     margin: 0 auto 70px auto;
@@ -203,5 +208,98 @@ nav {
     font-size: 1.6rem;
     margin-bottom: 30px;
     line-height: 160%;
+  }
+}
+
+.testimonials {
+  background-color: #9c69e2;
+  border-radius: 50px;
+  padding-bottom: 50px;
+
+  .dots {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    margin-top: 100px;
+    .dot {
+      margin-right: 10px;
+      padding: 5px;
+      border-radius: 50%;
+      background-color: #ddd;
+    }
+    .active {
+      padding: 7px;
+      background-color: #f063b8;
+    }
+  }
+
+  .arrows {
+    position: absolute;
+    right: 75px;
+    bottom: 63px;
+    a:first-of-type {
+      margin-right: 10px;
+    }
+  }
+}
+
+.testimonials__title {
+  padding: 100px 100px 70px 60px;
+  color: #fff;
+}
+
+.testimonials__cards {
+  display: flex;
+  width: 150%;
+  transform: translateX(60px);
+  .card {
+    display: flex;
+    height: 280px;
+    margin-right: 20px;
+    border-radius: 20px;
+    padding: 50px 20px;
+    background: #ffffff;
+    border: 1px solid #9c69e2;
+    box-shadow: 0px 20px 0px rgba(49, 0, 116, 0.1);
+
+    .contentBox {
+      .person {
+        font-size: 4rem;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 160%;
+      }
+
+      .link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 160%;
+      }
+
+      .content {
+        margin-top: 20px;
+        font-size: 15px;
+        line-height: 180%;
+        color: #4b5d68;
+      }
+    }
+
+    .avatarBox {
+      .avatar {
+        width: 90px;
+        height: 90px;
+        margin-right: 20px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .one {
+    width: 58%;
+  }
+
+  .two,
+  .three {
+    width: 36%;
   }
 }
