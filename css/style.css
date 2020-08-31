@@ -345,6 +345,7 @@ footer .incentive {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 160px;
 }
 
 footer .incentive .leftArea {
@@ -372,4 +373,103 @@ footer .incentive .leftArea p {
 
 footer .incentive .rightArea .btn--white {
   margin-left: 30px;
+}
+
+footer .footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr 1fr 2fr;
+      grid-template-columns: 2fr 1fr 1fr 2fr;
+}
+
+footer .footer div {
+  padding: 30px;
+  margin: 0 auto;
+}
+
+footer .footer div h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 160%;
+  color: #212353;
+}
+
+footer .footer .footer__about,
+footer .footer .footer__help {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer .footer__about a,
+footer .footer .footer__help a {
+  font-size: 16px;
+  line-height: 250%;
+  color: #212353;
+  text-decoration: none;
+}
+
+footer .footer .footer__about a:hover,
+footer .footer .footer__help a:hover {
+  -webkit-text-decoration: underline royalblue;
+          text-decoration: underline royalblue;
+}
+
+footer .footer .footer__adress {
+  padding-left: 0;
+}
+
+footer .footer .footer__adress h2 {
+  margin-bottom: 62px;
+  text-align: center;
+}
+
+footer .footer .footer__adress h2 img {
+  margin-right: 10px;
+}
+
+footer .footer .footer__adress p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+}
+
+footer .footer .footer__adress p:nth-of-type(2) {
+  margin-bottom: 15px;
+}
+
+footer .footer .footer__adress p:nth-of-type(4) {
+  margin-bottom: 118px;
+}
+
+footer .footer .footer__adress p:nth-of-type(5),
+footer .footer .footer__adress p:nth-of-type(6) {
+  font-size: 12px;
+  line-height: 180%;
+  color: #212353;
+}
+
+footer .footer .footer__socials {
+  padding-right: 0;
+}
+
+footer .footer .footer__socials img {
+  margin-right: 10px;
+}
+
+footer .footer .footer__socials .text-us-logo {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
