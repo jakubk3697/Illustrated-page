@@ -265,7 +265,11 @@ nav .btn img {
           transform: translateX(-50%);
 }
 
-.testimonials .arrows a:first-of-type {
+.testimonials .arrows .left, .testimonials .arrows .right {
+  width: 35px;
+}
+
+.testimonials .arrows .left {
   margin-right: 10px;
 }
 

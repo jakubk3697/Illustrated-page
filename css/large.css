@@ -10,3 +10,7 @@ nav .nav__links {
   width: 80%;
   margin: 0 auto;
 }
+
+footer .incentive .rightArea .btn--pink {
+  margin-right: 30px;
+}

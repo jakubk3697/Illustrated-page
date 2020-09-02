@@ -243,7 +243,10 @@ nav {
     left: 50%;
     bottom: 40px;
     transform: translateX(-50%);
-    a:first-of-type {
+    .left, .right {
+      width: 35px;
+    }
+    .left {
       margin-right: 10px;
     }
   }
@@ -383,7 +386,6 @@ footer {
       order: 1;
       h2 {
         margin-bottom: 40px;
-       
 
         img {
           margin-right: 10px;
