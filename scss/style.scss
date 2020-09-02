@@ -219,10 +219,10 @@ nav {
 .testimonials {
   background-color: #9c69e2;
   border-radius: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 
   .dots {
-    display: flex;
+    display: none;
     align-items: center;
     margin-left: 60px;
     margin-top: 100px;
@@ -240,8 +240,9 @@ nav {
 
   .arrows {
     position: absolute;
-    right: 75px;
-    bottom: 63px;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
     a:first-of-type {
       margin-right: 10px;
     }
@@ -249,7 +250,8 @@ nav {
 }
 
 .testimonials__title {
-  padding: 100px 100px 70px 60px;
+  padding: 40px;
+  text-align: center;
   color: #fff;
 }
 
@@ -259,17 +261,16 @@ nav {
   transform: translateX(60px);
   .card {
     display: flex;
-    height: 280px;
-    margin-right: 20px;
+    flex-direction: column;
+    margin-right: 15px;
     border-radius: 20px;
-    padding: 50px 20px;
+    padding: 20px;
     background: #ffffff;
     border: 1px solid #9c69e2;
     box-shadow: 0px 20px 0px rgba(49, 0, 116, 0.1);
 
     .contentBox {
       .person {
-        font-size: 4rem;
         font-weight: 900;
         font-size: 18px;
         line-height: 160%;
@@ -277,13 +278,12 @@ nav {
 
       .link {
         font-weight: 500;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 160%;
       }
 
       .content {
-        margin-top: 20px;
-        font-size: 15px;
+        font-size: 14px;
         line-height: 180%;
         color: #4b5d68;
       }
@@ -293,8 +293,8 @@ nav {
       .avatar {
         width: 90px;
         height: 90px;
-        margin-right: 20px;
         border-radius: 50%;
+        margin-bottom: 15px;
       }
     }
   }
@@ -311,61 +311,62 @@ nav {
 }
 
 footer {
-  margin-top: 250px;
+  margin-top: 100px;
 
   .incentive {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 160px;
+    margin-bottom: 60px;
 
     .leftArea {
       display: flex;
       flex-direction: column;
+      width: 50%;
 
       h1 {
         font-weight: 700;
-        font-size: 40px;
+        font-size: 3rem;
         line-height: 130%;
         margin-bottom: 20px;
       }
 
       p {
         font-weight: 500;
-        font-size: 18px;
+        font-size: 1.5rem;
         line-height: 160%;
       }
     }
-
     .rightArea {
+      display: flex;
+      align-items: flex-end;
       .btn--white {
-        margin-left: 30px;
+        display: none;
       }
     }
   }
 
   .footer {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 2fr;
+    display: flex;
+    flex-direction: column;
 
-    div {
-      padding: 30px;
-      margin: 0 auto;
+    h2 {
+      margin: 20px 0;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 160%;
+      color: #212353;
+    }
 
-      h2 {
-        display: flex;
-        align-items: center;
-        margin-bottom: 30px;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 160%;
-        color: #212353;
-      }
+    .footer__list {
+      display: flex;
+      justify-content: space-around;
     }
 
     .footer__about,
     .footer__help {
       display: flex;
       flex-direction: column;
+      text-align: center;
       a {
         font-size: 16px;
         line-height: 250%;
@@ -378,11 +379,11 @@ footer {
     }
 
     .footer__adress {
-      padding-left: 0;
-
+      text-align: center;
+      order: 1;
       h2 {
-        margin-bottom: 62px;
-        text-align: center;
+        margin-bottom: 40px;
+       
 
         img {
           margin-right: 10px;
@@ -393,34 +394,31 @@ footer {
         font-weight: 500;
         font-size: 16px;
         line-height: 180%;
-      }
+        &:nth-of-type(4) {
+          margin-bottom: 50px;
+        }
+        p:nth-of-type(2) {
+          margin-bottom: 15px;
+        }
 
-      p:nth-of-type(2) {
-        margin-bottom: 15px;
-      }
-
-      p:nth-of-type(4) {
-        margin-bottom: 118px;
-      }
-
-      p:nth-of-type(5),
-      p:nth-of-type(6) {
-        font-size: 12px;
-        line-height: 180%;
-        color: #212353;
+        &:nth-of-type(5),
+        &:nth-of-type(6) {
+          font-size: 12px;
+          line-height: 180%;
+          color: #212353;
+        }
       }
     }
 
     .footer__socials {
-      padding-right: 0;
-      img {
-        margin-right: 10px;
+      position: relative;
+      margin: 20px auto 40px;
+      a {
+        text-decoration: none;
       }
 
-      .text-us-logo {
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
+      img {
+        margin-right: 10px;
       }
     }
   }
