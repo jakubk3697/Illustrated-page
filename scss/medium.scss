@@ -1,0 +1,271 @@
+.container {
+  width: 720px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.btn--mobile-menu {
+  display: none;
+}
+
+.btn--violet {
+  box-shadow: none;
+}
+
+nav {
+  margin-top: 50px;
+
+  .nav__links {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10.8%;
+    width: 42.75%;
+  }
+  .container {
+    .btn {
+      position: absolute;
+      right: 0;
+      bottom: unset;
+
+      img {
+        display: initial;
+      }
+    }
+  }
+}
+
+.landing-page {
+  min-height: 100vh;
+  padding: 130px 0 100px 0;
+  background-position: 100% 50%;
+  background-size: 70%;
+
+  h1 {
+    font-size: 7rem;
+  }
+
+  p {
+    line-height: 160%;
+    width: 34%;
+  }
+
+  h1,
+  p {
+    margin-bottom: 35px;
+  }
+}
+
+.about {
+  padding: 50px 40px 50px 40%;
+  background-position: 5% 50%;
+  background-size: 30%;
+
+  h1 {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  p {
+    line-height: 160%;
+  }
+}
+
+.features {
+  margin-top: 100px;
+
+  .features__header {
+    width: 52%;
+    margin: 0 auto 100px auto;
+  }
+
+  .features__list {
+    grid-template-columns: 100%;
+  }
+
+  .features__item {
+    height: 360px;
+    padding: 62px 50px 50px 50%;
+    background-repeat: no-repeat;
+    background-position: 100% 50%, 5% 50%;
+  }
+
+  a {
+    position: absolute;
+    bottom: 30px;
+  }
+
+  .features__item--1 {
+    background-image: url("../img/bg/bg-f-1.svg"), url("../img/bg/bg-f-1b.svg");
+  }
+
+  .features__item--2 {
+    background-image: url("../img/bg/bg-f-2.svg"), url("../img/bg/bg-f-2b.svg");
+  }
+
+  .features__item--3 {
+    background-image: url("../img/bg/bg-f-3.svg"), url("../img/bg/bg-f-3b.svg");
+  }
+
+  .features__item--4 {
+    background-image: url("../img/bg/bg-f-4.svg"), url("../img/bg/bg-f-4b.svg");
+  }
+
+  h2 {
+    margin-bottom: 35px;
+  }
+}
+
+//-------------------------------------------
+
+.testimonials {
+  background-color: #9c69e2;
+  border-radius: 50px;
+  padding-bottom: 50px;
+
+  .dots {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    margin-top: 100px;
+    .dot {
+      margin-right: 10px;
+      padding: 5px;
+      border-radius: 50%;
+      background-color: #ddd;
+    }
+    .active {
+      padding: 7px;
+      background-color: #f063b8;
+    }
+  }
+
+  .arrows {
+    position: absolute;
+    right: 75px;
+    bottom: 63px;
+    a:first-of-type {
+      margin-right: 10px;
+    }
+  }
+}
+
+.testimonials__title {
+  padding: 100px 100px 70px 60px;
+  color: #fff;
+}
+
+.testimonials__cards {
+  display: flex;
+  width: 150%;
+  transform: translateX(60px);
+  .card {
+    display: flex;
+    height: 330px;
+    margin-right: 20px;
+    border-radius: 20px;
+    padding: 50px 20px;
+    background: #ffffff;
+    border: 1px solid #9c69e2;
+    box-shadow: 0px 20px 0px rgba(49, 0, 116, 0.1);
+
+    .contentBox {
+      .person {
+        font-size: 4rem;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 160%;
+      }
+
+      .link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 160%;
+      }
+
+      .content {
+        margin-top: 20px;
+        font-size: 15px;
+        line-height: 180%;
+        color: #4b5d68;
+      }
+    }
+
+    .avatarBox {
+      .avatar {
+        width: 90px;
+        height: 90px;
+        margin-right: 20px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .one {
+    width: 58%;
+  }
+
+  .two,
+  .three {
+    width: 36%;
+    opacity: 0.8;
+  }
+}
+
+footer {
+  margin-top: 250px;
+
+  .incentive {
+    margin-bottom: 160px;
+
+    .leftArea {
+      h1 {
+        font-size: 40px;
+      }
+
+      p {
+        font-size: 1.8rem;
+      }
+    }
+
+    .rightArea {
+      .btn--white {
+        display: block;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    column-gap: 50px;
+
+    h2 {
+      text-align: center;
+    }
+
+    .footer__list {
+      column-gap: 50px;
+    }
+
+    .footer__adress {
+      order: 0;
+
+      h2 {
+        margin-bottom: 62px;
+      }
+    }
+
+    .footer__socials {
+      .text-us-logo {
+        position: absolute;
+        bottom: 20px;
+        right: 0x;
+      }
+    }
+  }
+}
+
+//-------------------------------------------

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" media="(min-width: 760px)" href="css/medium.css" />
+    <link rel="stylesheet" media="(min-width: 1024px)" href="css/large.css" />
+    <link rel="stylesheet" media="(min-width: 1440px)" href="css/extraLarge.css" />
   </head>
   <body>
     <nav>
@@ -22,6 +25,10 @@
           Request demo
           <img src="img/icons/arrow.svg" alt="arrow" aria-hidden />
         </button>
+
+        <button class="btn btn--mobile-menu">
+          <img src="img/icons/menu.svg" alt="Button menu" aria-label="Open mobile menu" />
+        </button>
       </div>
     </nav>
 
@@ -36,7 +43,7 @@
 
       <div class="container">
         <section class="about">
-          <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+          <h1>Lorem ipsum dolor sit amet consectetur</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quaerat accusamus aspernatur, doloremque modi adipisci ex nesciunt veritatis dignissimos reprehenderit suscipit quam quia vitae! Reprehenderit molestiae veniam quis vitae officiis?</p>
         </section>
 
@@ -48,16 +55,172 @@
             </header>
 
             <div class="features__list">
-              <div>
-                <h2></h2>
-                <p class="features__desc"></p>
-                <a href=""></a>
+              <div class="features__item features__item--1">
+                <h2>Search data</h2>
+                <p class="features__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, quam magnam architecto eaque praesentium unde!</p>
+                <a href="#">
+                  Learn more
+                  <img src="/img/icons/arrow.svg" alt="arrow" />
+                </a>
+              </div>
+
+              <div class="features__item features__item--2">
+                <h2>Search data</h2>
+                <p class="features__desc">Lorem ipsum, dolor sit amet cunde Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate voluptate facere repellat!</p>
+                <a href="#">
+                  Learn more
+                  <img src="/img/icons/arrow.svg" alt="arrow" />
+                </a>
+              </div>
+
+              <div class="features__item features__item--3">
+                <h2>Search data</h2>
+                <p class="features__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, ipsa!.</p>
+                <a href="#">
+                  Learn more
+                  <img src="/img/icons/arrow.svg" alt="arrow" />
+                </a>
+              </div>
+
+              <div class="features__item features__item--4">
+                <h2>Search data</h2>
+                <p class="features__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, quam magnam architecto eaque praesentium unde!</p>
+                <a href="#">
+                  Learn more
+                  <img src="/img/icons/arrow.svg" alt="arrow" />
+                </a>
               </div>
             </div>
           </div>
         </section>
-        <div style="height: 40vh"></div>
+
+        <div class="container">
+          <section class="testimonials">
+            <h1 class="testimonials__title">Testimonials</h1>
+
+            <div class="testimonials__cards">
+              <div class="card one">
+                <div class="avatarBox">
+                  <img src="img/icons/personOne.jpg" alt="avatar" class="avatar" />
+                </div>
+                <div class="contentBox">
+                  <h2 class="person">Jon Fang</h2>
+                  <a href="#" class="link">wordfaang.com</a>
+                  <p class="content">uspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.</p>
+                </div>
+              </div>
+
+              <div class="card two">
+                <div class="avatarBox">
+                  <img src="img/icons/personTwo.jpg" alt="avatar" class="avatar" />
+                </div>
+
+                <div class="contentBox">
+                  <h2 class="person">Jon Fang</h2>
+                  <a href="#" class="link">wordfaang.com</a>
+                  <p class="content">uspendisse ultrices at diam lectus nullam. Nisl viverra enim erat a.</p>
+                </div>
+              </div>
+
+              <div class="card three">
+                <div class="avatarBox">
+                  <img src="img/icons/personThree.jpg" alt="avatar" class="avatar" />
+                </div>
+                <div class="contentBox">
+                  <h2 class="person">Jon Fang</h2>
+                  <a href="#" class="link">wordfaang.com</a>
+                  <p class="content">uspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat .</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="dots">
+              <a href="#" class="dot active"></a>
+              <a href="#" class="dot"></a>
+              <a href="#" class="dot"></a>
+              <a href="#" class="dot"></a>
+            </div>
+
+            <div class="arrows">
+              <a href="#">
+                <img src="img/icons/leftGray.svg" alt="arrow left" class="left" />
+              </a>
+              <a href="#">
+                <img src="img/icons/rightGray.svg" alt="arrow left" class="right" />
+              </a>
+            </div>
+          </section>
+        </div>
       </div>
     </main>
+
+    <footer>
+      <div class="container">
+        <div class="incentive">
+          <div class="leftArea">
+            <h1>Try for free</h1>
+            <p>Get limited 1 week free try our features!</p>
+          </div>
+
+          <div class="rightArea">
+            <button class="btn btn--pink">Learn more</button>
+            <button class="btn btn--white">
+              Request Demo
+              <img src="/img/icons/arrow.svg" alt="arrow" />
+            </button>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="footer__adress">
+            <h2>
+              <img src="img/icons/logo.svg" alt="logo" />
+              DataWarehouse
+            </h2>
+            <p>Warehouse Society, 234</p>
+            <p>Bahagia Ave Street PRBW 29281</p>
+            <p>info@warehouse.project</p>
+            <p>1-232-3434 (Main)</p>
+            <p>© Datawarehouse™, 2020. All rights reserved.</p>
+            <p>Company Registration Number: 21479524.</p>
+          </div>
+
+          <div class="footer__list">
+            <div class="footer__about">
+              <h2 href="#">About</h2>
+              <a href="#">Profile</a>
+              <a href="#">Features</a>
+              <a href="#">Careers</a>
+              <a href="#">DW News</a>
+            </div>
+
+            <div class="footer__help">
+              <h2 href="#">Help</h2>
+              <a href="#">Support</a>
+              <a href="#">Sign up</a>
+              <a href="#">Guide</a>
+              <a href="#">Reports</a>
+              <a href="#">Q&A</a>
+            </div>
+          </div>
+
+          <div class="footer__socials">
+            <h2>Social media:</h2>
+            <a href="facebook.com">
+              <img src="img/icons/fb-logo.png" alt="facebook logo" />
+            </a>
+            <a href="#">
+              <img src="img/icons/tw-logo.png" alt="twitter logo" />
+            </a>
+            <a href="#">
+              <img src="img/icons/insta-logo.png" alt="instagram logo" />
+            </a>
+            <a href="#">
+              <img src="img/icons/textus-logo.png" alt="text us logo" class="text-us-logo" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
